@@ -31,7 +31,7 @@ function personagem(item){
     const cor_pele = document.querySelector('.cor_pele')
     const data_nascimento = document.querySelector('.data_nascimento')
 
-  personageImg.innerHTML = `../image/perso${paramIndex}.png`
+  personageImg.innerHTML /* src */ = `../image/perso${paramIndex}.png`
   nome.innerHTML = `Nome : ${item.name}`
   altura.innerHTML = `Altura : ${item.heigth} cm`
   peso.innerHTML =  `Peso : ${item.mass} kg`
