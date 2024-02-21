@@ -27,8 +27,15 @@ function renderizarPersonagens(items){
            </div>
     </div>
     `;
+    divPersonagens.classList.add('click', ()=>{
+        detalhesPersonagens( index)
+    })
      divPersonagens.classList.add('personagem')
     container.appendChild(divPersonagens)
     })
     console.log(items)
+}
+
+function detalhesPersonagens(index){
+ window.location = `./pages/person.html=${index}`
 }
